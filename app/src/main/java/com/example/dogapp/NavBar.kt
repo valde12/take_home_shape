@@ -24,6 +24,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.currentBackStackEntryAsState
 
 data class BottomNavItem(
     val name: String,
@@ -34,6 +35,8 @@ data class BottomNavItem(
 
 @Composable
 fun BottomNavBar(navController: NavController) {
+
+    //List of items for the navigation bar
     val bottomNavItems = listOf(
         BottomNavItem(
             name = "Home",
@@ -56,6 +59,10 @@ fun BottomNavBar(navController: NavController) {
     val contentColor = MaterialTheme.colorScheme.onSurface
     val containerColor = MaterialTheme.colorScheme.surface
     val indicatorColor = MaterialTheme.colorScheme.secondaryContainer
+
+    val navStackBackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navStackBackEntry?.destination?.route
+    selectedItemIndex = bottomNavItems.indexOfFirst { it.route == currentRoute }.coerceAtLeast(0)
 
     NavigationBar(
         containerColor = containerColor,
