@@ -43,14 +43,16 @@ fun HomeScreen(navController: NavController, viewModel: HomeViewmodel = viewMode
     Scaffold (
         bottomBar = { BottomNavBar(navController = navController) },
     ) { innerPadding ->
-        DogBreedList(navController, breeds.value)
+        DogBreedList(navController, breeds.value, Modifier.padding(innerPadding) )
         Modifier.padding(innerPadding)
     }
 }
 
 @Composable
-fun DogBreedList(navController: NavController, breeds: dogResponseList) {
-    LazyColumn {
+fun DogBreedList(navController: NavController, breeds: dogResponseList, modifier: Modifier) {
+    LazyColumn(
+        modifier = modifier
+    ) {
         items(breeds.message.entries.toList()) { breed ->
             if (breed.value.isNotEmpty()) {
                 breed.value.forEach { subBreed ->
