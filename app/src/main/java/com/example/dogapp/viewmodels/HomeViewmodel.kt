@@ -3,7 +3,7 @@ package com.example.dogapp.viewmodels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.dogapp.api.APIHandler
-import com.example.dogapp.dogResponseList
+import com.example.dogapp.models.dogResponseList
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

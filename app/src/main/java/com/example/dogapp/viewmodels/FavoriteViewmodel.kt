@@ -1,10 +1,8 @@
 package com.example.dogapp.viewmodels
 
 import android.content.Context
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.ViewModel
-import com.example.dogapp.dogBreed
+import com.example.dogapp.models.dogBreed
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.flow.MutableStateFlow

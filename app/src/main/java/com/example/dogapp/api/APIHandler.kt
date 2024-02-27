@@ -1,8 +1,8 @@
 package com.example.dogapp.api
 
 import android.util.Log
-import com.example.dogapp.dogImageList
-import com.example.dogapp.dogResponseList
+import com.example.dogapp.models.dogImageList
+import com.example.dogapp.models.dogResponseList
 import retrofit2.Retrofit
 import retrofit2.awaitResponse
 import retrofit2.converter.moshi.MoshiConverterFactory

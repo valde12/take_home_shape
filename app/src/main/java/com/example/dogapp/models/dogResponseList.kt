@@ -1,4 +1,4 @@
-package com.example.dogapp
+package com.example.dogapp.models
 
 data class dogResponseList(
     val message: Map<String, List<String>>,

@@ -3,11 +3,9 @@ package com.example.dogapp.viewmodels
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.dogapp.api.APIHandler
-import com.example.dogapp.dogBreed
-import kotlinx.coroutines.Dispatchers
+import com.example.dogapp.models.dogBreed
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.withContext
 
 class DogBreedImagesViewmodel : ViewModel() {
     private val apiHandler = APIHandler.getInstance()

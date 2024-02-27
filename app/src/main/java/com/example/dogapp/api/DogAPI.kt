@@ -1,7 +1,7 @@
 package com.example.dogapp.api
 
-import com.example.dogapp.dogImageList
-import com.example.dogapp.dogResponseList
+import com.example.dogapp.models.dogImageList
+import com.example.dogapp.models.dogResponseList
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -26,8 +26,8 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.dogapp.BottomNavBar
-import com.example.dogapp.dogBreed
-import com.example.dogapp.dogResponseList
+import com.example.dogapp.models.dogBreed
+import com.example.dogapp.models.dogResponseList
 import com.example.dogapp.viewmodels.HomeViewmodel
 
 @OptIn(ExperimentalMaterial3Api::class)
